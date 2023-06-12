@@ -1,17 +1,25 @@
 package main
 
-import (
-	"fmt"
+// "github.com/heeropunjabi/go-handson/utils"
 
-	"github.com/heeropunjabi/go-handson/utils"
-)
+	
+func abc(x interface{}, y interface{}) {
+
+	z:= x.(int) + y.(int)
+	println(z)
+
+	// if x.(int) > y.(int) {
+	// 	fmt.Println("x is greater than y")
+	// } else {
+	// 	fmt.Println("y is greater than x")
+	// }
+	
+}
 
 
 func main() {
-	fmt.Println("first module")
-	oms := utils.Oms()
-	fmt.Println(oms)
-	
+	abc(10, 20)
+
 	
 
 }
